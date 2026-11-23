@@ -36,7 +36,7 @@
       </section>
 
       <section class="category-bar" aria-label="Categorie">
-        <a href="#catalogo" data-category="Tutti">Tutte le bottiglie</a><a href="#catalogo" data-category="Rossi">Rossi</a><a href="#catalogo" data-category="Bianchi">Bianchi</a><a href="#catalogo" data-category="Bollicine">Bollicine</a><a href="#catalogo" data-category="Dolci e meditazione">Dolci & meditazione</a><a href="#catalogo" data-category="Aperitivo">Aperitivo</a>
+        <a href="#catalogo" data-category="Tutti">Tutte le bottiglie</a><a href="#catalogo" data-category="Rossi">Rossi</a><a href="#catalogo" data-category="Bianchi">Bianchi</a><a href="#catalogo" data-category="Rosati">Rosati</a><a href="#catalogo" data-category="Bollicine">Bollicine</a><a href="#catalogo" data-category="Dolci e meditazione">Dolci & meditazione</a><a href="#catalogo" data-category="Aperitivo">Aperitivo</a>
       </section>
 
       <section class="featured" aria-labelledby="featured-title">
@@ -46,7 +46,7 @@
 
       <section class="catalog-section" id="catalogo" aria-labelledby="catalog-title">
         <div class="section-heading"><div><p class="eyebrow">IL CATALOGO</p><h2 id="catalog-title">Scegli la tua bottiglia</h2></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Cerca per vino, vitigno o regione" /></label></div>
-        <div class="filters" role="group" aria-label="Filtra per categoria"><button class="filter active" data-filter="Tutti">Tutto</button><button class="filter" data-filter="Rossi">Rossi</button><button class="filter" data-filter="Bianchi">Bianchi</button><button class="filter" data-filter="Bollicine">Bollicine</button><button class="filter" data-filter="Dolci e meditazione">Dolci & meditazione</button><button class="filter" data-filter="Aperitivo">Aperitivo</button></div>
+        <div class="filters" role="group" aria-label="Filtra per categoria"><button class="filter active" data-filter="Tutti">Tutto</button><button class="filter" data-filter="Rossi">Rossi</button><button class="filter" data-filter="Bianchi">Bianchi</button><button class="filter" data-filter="Rosati">Rosati</button><button class="filter" data-filter="Bollicine">Bollicine</button><button class="filter" data-filter="Dolci e meditazione">Dolci & meditazione</button><button class="filter" data-filter="Aperitivo">Aperitivo</button></div>
         <p class="result-count" id="result-count"></p>
         <div class="product-grid" id="product-grid" aria-live="polite"></div>
       </section>
@@ -60,6 +60,7 @@
 
     <aside class="cart-drawer" id="cart-drawer" aria-label="Carrello" aria-hidden="true"><div class="drawer-header"><h2>La tua cassa</h2><button class="icon-button" id="close-cart" aria-label="Chiudi carrello">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-summary"><div><span>Subtotale</span><strong id="cart-total">0,00 €</strong></div><p>[SEGNAPOSTO: imposte e consegna saranno calcolate al checkout.]</p><button class="button button-dark checkout" id="checkout">Prosegui alla richiesta</button></div></aside><div class="overlay" id="overlay"></div>
     <dialog id="checkout-dialog"><button class="icon-button dialog-close" aria-label="Chiudi">×</button><p class="eyebrow">PROTOTIPO</p><h2>Checkout da collegare</h2><p>Qui andrà integrato il flusso sicuro per dati di consegna, pagamento, disponibilità e conferma d'ordine.</p><p class="placeholder-note">Nessun ordine viene inviato in questa demo.</p></dialog>
+    <script src="products.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

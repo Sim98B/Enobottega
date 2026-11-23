@@ -22,7 +22,14 @@ Poi visita `http://localhost:8000`.
 
 - `index.html`: struttura, testi, prodotti demo e segnaposto operativi.
 - `styles.css`: palette, tipografia, layout e breakpoint responsive.
-- `app.js`: catalogo, ricerca, filtri, carrello e riepilogo ordine.
+- `products.js`: catalogo di prodotti; è il solo file da modificare per nomi, prezzi e caratteristiche delle bottiglie.
+- `app.js`: ricerca, filtri, carrello e riepilogo ordine.
+
+### Aggiungere un prodotto
+
+In `products.js`, copia uno dei blocchi compresi tra `{` e `}` e aggiornane i campi. L'`id` deve essere unico, `price` deve essere un numero senza simbolo `€`, e `color` può essere uno tra `red`, `brick`, `gold`, `amber`, `rose`, `lime`, `honey`, `forest` e `plum`. Le categorie attualmente disponibili sono `Rossi`, `Bianchi`, `Rosati`, `Bollicine`, `Dolci e meditazione` e `Aperitivo`.
+
+Ogni prodotto include `producer` (produttore), `denomination` (denominazione), `vintage` (annata), `format` (formato della bottiglia) e `alcohol` (gradazione alcolica). Mantieni questi valori distinti: il sito li visualizza separatamente nella scheda. `note` resta disponibile per una breve annotazione, come affinamento o altra caratteristica utile.
 
 Per collegare il sito a un e-commerce reale, sostituisci l'array `products` in `app.js` con dati da CMS/API e collega il pulsante di checkout a un provider di pagamento e a un backend per ordini, disponibilità e spedizioni.
 
